@@ -12017,4 +12017,14 @@ nav .nav-item a {
   color: #7E7E7E;
   font-weight: 400;
 }
+
+.intro {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.intro .intro-img {
+  padding-left: 202px;
+  vertical-align: middle;
+}
 /*# sourceMappingURL=style.css.map */
