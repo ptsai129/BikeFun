@@ -2,3 +2,64 @@
 @import "./helpers/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+ul{
+    margin-bottom: 0px;
+}
+
+header{
+    height:715px;
+    width:100%;
+    background-image: url(../image/header-background.jfif);
+    background-size: cover;
+    img{
+        height:165px;
+        width:545px;
+        top:219px;
+        left:397px;
+    }
+    p{
+        top:378px;
+        left:769px;
+        font-size: 20px;
+       color: $light;
+       font-family: 'Noto Sans',;
+    }
+}
+
+nav{
+    position:relative;
+    top:-100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: $light;
+    border-bottom:1px solid #E5E5E5;
+    li{
+        list-style-type: none;
+        
+       
+    }
+    .nav-firstItem{
+        padding-left: 96px;
+        padding-right:50px;
+        padding-top:19px;
+        a{
+            font-size: 10px;
+            color:#7E7E7E;
+            font-weight: 300;
+            img{
+                height:49px;
+                width:133px;
+            }
+        }
+    }
+    .nav-item{
+        border-left: 1px solid #E5E5E5;
+        padding:39px 70px;
+        a{  
+            font-size: 16px;
+            color:#7E7E7E;
+            font-weight: 400;
+        }
+     
+    }
+}
