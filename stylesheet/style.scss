@@ -2,9 +2,19 @@
 @import "./helpers/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-ul{
-    margin-bottom: 0px;
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+
+  ul  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 
 header{
     height:715px;
@@ -12,17 +22,26 @@ header{
     background-image: url(../image/header-background.jfif);
     background-size: cover;
     img{
-        height:165px;
+        height:23%;
         width:545px;
-        top:219px;
-        left:397px;
+        top:30%;
+        left:28%;
+        @media (max-width: 575.98px) { 
+            top:36.4%;
+            left:14%;
+            height:82px;
+            width:269px;
+        }
     }
     p{
-        top:378px;
-        left:769px;
+        top:53%;
+        left:53%;
         font-size: 20px;
-       color: $light;
-       font-family: 'Noto Sans',;
+        color: $light;
+       font-family: 'Noto Sans';
+       @media (max-width: 575.98px) { 
+        left:17.8%;
+    }
     }
 }
 
@@ -33,14 +52,20 @@ nav{
     border-top-right-radius: 50px;
     background-color: $light;
     border-bottom:1px solid #E5E5E5;
+    @include media-breakpoint-down(sm) { 
+        top:-55px;
+        height:55px;
+        border-bottom:none;
+     }
     li{
         list-style-type: none;
     }
     .nav-firstItem{
-        padding-left: 96px;
-        padding-right:50px;
-        padding-top:19px;
-        a{
+        width:26.6%;
+        a{  
+            display:block;
+            padding-left:33%;
+            padding-top:19px;
             font-size: 10px;
             color:#7E7E7E;
             font-weight: 300;
@@ -51,12 +76,16 @@ nav{
         }
     }
     .nav-item{
+        width:18.3%;
         border-left: 1px solid #E5E5E5;
-        padding:39px 70px;
         a{  
+            display:block;
+            padding-top:39px;
+            padding-bottom:39px;
             font-size: 16px;
             color:#7E7E7E;
             font-weight: 400;
+            text-align: center;
         }
      
     }
