@@ -33,7 +33,7 @@ header{
             width:269px;
         }
     }
-    p{
+    h1{
         top:53%;
         left:53%;
         font-size: 20px;
@@ -72,6 +72,7 @@ nav{
             img{
                 height:49px;
                 width:133px;
+                
             }
         }
     }
@@ -99,4 +100,9 @@ nav{
         padding-left:202px;
         vertical-align: middle;
     }
+}
+
+.latestNews{
+    border-bottom:1px solid #B6B6B6; 
+    border-top:1px solid #B6B6B6; 
 }

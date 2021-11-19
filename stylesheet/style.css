@@ -11987,7 +11987,7 @@ header img {
   }
 }
 
-header p {
+header h1, header .h1 {
   top: 53%;
   left: 53%;
   font-size: 20px;
@@ -11996,7 +11996,7 @@ header p {
 }
 
 @media (max-width: 575.98px) {
-  header p {
+  header h1, header .h1 {
     left: 17.8%;
   }
 }
@@ -12063,5 +12063,10 @@ nav .nav-item a {
 .intro .intro-img {
   padding-left: 202px;
   vertical-align: middle;
+}
+
+.latestNews {
+  border-bottom: 1px solid #B6B6B6;
+  border-top: 1px solid #B6B6B6;
 }
 /*# sourceMappingURL=style.css.map */
