@@ -1,199 +1,296 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
-@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Layout../node_modules/bootstrap/scss/ & components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers"; 
+//拿掉格線系統
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+
+// Helper../node_modules/bootstrap/scss/s
+@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilit../node_modules/bootstrap/scss/ies
+@import "../node_modules/bootstrap/scss/utilities/api";
 
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  height: 715px;
+  width: 100%;
+  background-image: url(../image/header-background.jfif);
+  background-size: cover;
+  img {
+    height: 23%;
+    width: 545px;
+    top: 30%;
+    left: 28%;
+    @media (max-width: 575.98px) {
+      top: 36.4%;
+      left: 14%;
+      height: 82px;
+      width: 269px;
+    }
+  }
+  h1 {
+    top: 53%;
+    left: 53%;
+    font-size: 20px;
+    color: $light;
+    font-family: "Noto Sans";
+    @media (max-width: 575.98px) {
+      left: 17.8%;
+    }
+  }
+}
+
+nav {
+  position: relative;
+  top: -100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: $light;
+  border-bottom: 1px solid #dfdfdf;
+  @include media-breakpoint-down(sm) {
+    top: -55px;
+    height: 55px;
+    border-bottom: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  .nav-firstItem {
+    width: 26.6%;
+    a {
+      display: block;
+      padding-left: 33%;
+      padding-top: 19px;
+      font-size: 10px;
+      color: #7e7e7e;
+      font-weight: 300;
+      img {
+        height: 49px;
+        width: 133px;
+      }
+    }
+  }
+  .nav-item {
+    width: 18.3%;
+    border-left: 1px solid #e5e5e5;
+    a {
+      display: block;
+      padding-top: 39px;
+      padding-bottom: 39px;
+      font-size: 16px;
+      color: #7e7e7e;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.intro {
+  width: 60%;
+  margin: 22px auto 69px auto;
+  .intro-img {
+    padding-left: 202px;
     vertical-align: middle;
-    object-fit: cover;
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+      padding-left: 0px;
+    }
+  }
+}
+
+.latestNews {
+  border-bottom: 1px solid #b6b6b6;
+  border-top: 1px solid #b6b6b6;
+  height: 472px;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: none;
+  }
+}
+
+.latestNews-link {
+  width: 17.5%;
+  h2 {
+    color: $primary;
+    @include media-breakpoint-down(sm) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      margin-bottom: 0px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.latestNews-card {
+  width: 27.5%;
+  color: $light;
+  font-family: Roboto, sans-serif;
+  a {
+    color: $light;
+    text-decoration: underline;
+    padding-top: 12.3%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+.bikeRoute {
+  background-image: url(/image/index_news01.jpg);
+  height: 472px;
+  background-position: center;
+  object-fit: cover;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 24px;
+    margin-top: 22px;
+  }
+}
+.newParkExibOpen {
+  background-image: url(/image/index_news02.jpg);
+  height: 472px;
+  background-position: center;
+  object-fit: cover;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 32px;
+  }
+}
+
+.latestNews-date {
+  font-size: 16px;
+}
+
+.latestNews-card-title {
+  padding-left: 19.4%;
+  padding-right: 19.4%;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.latestNews-more {
+  width: 27.5%;
+  @include media-breakpoint-down(sm) {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.exploreRoute {
+  height: 472px;
+  @include media-breakpoint-down(sm) { 
+    flex-wrap: wrap;
+  }
+}
+
+.exploreRoute-link {
+  width: 17.5%;
+  border-right: 1px solid #b6b6b6;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+  h2 {
+    color: $primary;
+    @include media-breakpoint-down(sm) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+  }
+}
+
+.epxloreRoute-search {
+  width: 55%;
+  padding-left: 53px;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    padding-left: 0px;
+  }
+  p {
+    padding-top: 182px;
+    font-size: 20px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 32px;
+      }
+  }
+  button {
+    margin-top: 32px;
+    margin-bottom: 186px;
+    @include media-breakpoint-down(sm) {
+        margin-top: 52px;
+        margin-bottom: 32px;
+      }
   }
 
-  ul  {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  
 }
 
+.exploreRoute-img {
+  width: 27.5%;
+  background-image: url(/image/index_route.jpg);
+  background-size: cover;
+  background-position: left;
+  padding-left:0px;
+  padding-right:0px;
 
-header{
-    height:715px;
-    width:100%;
-    background-image: url(../image/header-background.jfif);
-    background-size: cover;
-    img{
-        height:23%;
-        width:545px;
-        top:30%;
-        left:28%;
-        @media (max-width: 575.98px) { 
-            top:36.4%;
-            left:14%;
-            height:82px;
-            width:269px;
-        }
-    }
-    h1{
-        top:53%;
-        left:53%;
-        font-size: 20px;
-        color: $light;
-       font-family: 'Noto Sans';
-       @media (max-width: 575.98px) { 
-        left:17.8%;
-    }
-    }
-}
-
-nav{
-    position:relative;
-    top:-100px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-color: $light;
-    border-bottom:1px solid #DFDFDF;
-    @include media-breakpoint-down(sm) { 
-        top:-55px;
-        height:55px;  
-        border-bottom: none;
-     }
-    li{
-        list-style-type: none;
-    }
-    .nav-firstItem{
-        width:26.6%;
-        a{  
-            display:block;
-            padding-left:33%;
-            padding-top:19px;
-            font-size: 10px;
-            color:#7E7E7E;
-            font-weight: 300;
-            img{
-                height:49px;
-                width:133px;
-                
-            }
-        }
-    }
-    .nav-item{
-        width:18.3%;
-        border-left: 1px solid #E5E5E5;
-        a{  
-            display:block;
-            padding-top:39px;
-            padding-bottom:39px;
-            font-size: 16px;
-            color:#7E7E7E;
-            font-weight: 400;
-            text-align: center;
-        }
-     
-    }
-}
-
-
-.intro{
-    width:60%;
-    margin:22px auto 69px auto ; 
-    .intro-img{
-        padding-left:202px;
-        vertical-align: middle;
-        @include media-breakpoint-down(sm) { 
-           margin: 0 auto; 
-           padding-left:0px; 
-         }
-    }
-}
-
-.latestNews{
-    border-bottom:1px solid #B6B6B6; 
-    border-top:1px solid #B6B6B6; 
-    height:472px;
-    @include media-breakpoint-down(md){
-        height:408px;
-    }
-    @include media-breakpoint-down(sm) { 
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left:25px;
-        padding-right:25px;
-        border-bottom: none; 
-    }
-}
-
-.latestNews-link{
-    width:17.5%;
-    h2{
-        color: $primary;
-        @include media-breakpoint-down(sm) { 
-            padding-top:22px;
-            padding-bottom:22px;
-            margin-bottom: 0px;
-        }
-    }
-    @include media-breakpoint-down(sm) { 
-        width:100%;
-    }
-}
-
-.latestNews-card{
-    width:27.5%;
-    color:$light;
-    font-family: Roboto,sans-serif;
-    a{
-        color: $light;
-        text-decoration: underline;
-        padding-top: 12.3%;
-    }
-    @include media-breakpoint-down(sm) { 
-        width:100%;
-    }
-}
-.bikeRoute{
-    background-image: url(/image/index_news01.jpg);
-    height:472px;
-    background-position: center;
-    object-fit: cover;
-    @include media-breakpoint-down(md){
-        height:408px;
-    }
-    @include media-breakpoint-down(sm) { 
-        margin-bottom: 24px;
-        margin-top:22px;
-     }
-}
-.newParkExibOpen{
-    background-image: url(/image/index_news02.jpg);
-    height:472px; 
-    background-position: center;
-    object-fit: cover;
-    @include media-breakpoint-down(md){
-        height:408px;
-    }
-    @include media-breakpoint-down(sm) { 
-        margin-bottom: 32px;
-     }
-}
-
-.latestNews-date{
-    font-size: 16px;
-}
-
-
-
-.latestNews-card-title{
-   padding-left:19.4%;
-   padding-right:19.4%; 
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.latestNews-more{
-    width:27.5%;
-        @include media-breakpoint-down(sm) { 
-            padding-left: 0px;
-            padding-right:0px;
-            width:100%;
-         }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
 }
