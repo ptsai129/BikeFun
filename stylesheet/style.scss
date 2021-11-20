@@ -46,8 +46,7 @@
 
 img {
   max-width: 100%;
-  vertical-align: middle;
-  object-fit: cover;
+  height:auto;
 }
 
 ul {
@@ -191,6 +190,7 @@ nav {
   background-image: url(/image/index_news01.jpg);
   height: 472px;
   background-position: center;
+  background-repeat: no-repeat;
   object-fit: cover;
   @include media-breakpoint-down(md) {
     height: 408px;
@@ -204,6 +204,7 @@ nav {
   background-image: url(/image/index_news02.jpg);
   height: 472px;
   background-position: center;
+  background-repeat: no-repeat;
   object-fit: cover;
   @include media-breakpoint-down(md) {
     height: 408px;
@@ -227,8 +228,6 @@ nav {
 .latestNews-more {
   width: 27.5%;
   @include media-breakpoint-down(sm) {
-    padding-left: 0px;
-    padding-right: 0px;
     width: 100%;
     margin-bottom: 32px;
   }
@@ -238,6 +237,7 @@ nav {
   height: 472px;
   @include media-breakpoint-down(sm) { 
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

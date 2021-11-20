@@ -10548,9 +10548,7 @@ fieldset:disabled .btn {
 
 img {
   max-width: 100%;
-  vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
 }
 
 ul {
@@ -10736,6 +10734,7 @@ nav .nav-item a {
   background-image: url(/image/index_news01.jpg);
   height: 472px;
   background-position: center;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -10757,6 +10756,7 @@ nav .nav-item a {
   background-image: url(/image/index_news02.jpg);
   height: 472px;
   background-position: center;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -10790,8 +10790,6 @@ nav .nav-item a {
 
 @media (max-width: 575.98px) {
   .latestNews-more {
-    padding-left: 0px;
-    padding-right: 0px;
     width: 100%;
     margin-bottom: 32px;
   }
@@ -10805,6 +10803,9 @@ nav .nav-item a {
   .exploreRoute {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
