@@ -43,6 +43,11 @@
 // Utilit../node_modules/bootstrap/scss/ies
 @import "../node_modules/bootstrap/scss/utilities/api";
 
+body{
+  font-family: Roboto, 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+}
+
+
 
 img {
   max-width: 100%;
@@ -443,4 +448,118 @@ nav {
   background-image: url(../image/bike-background.jpg);
   background-size: cover;
   background-position: center;
+  }
+
+  .searchRoute{
+   
+    border: 1px solid #E0E0E0;
+    border-radius:25px;
+    padding: 24px 48px 33px 32px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm) { 
+      padding: 32px 24px; 
+      margin-bottom: 32px;
+     }
+  }
+
+
+  .searchRoute-setting{
+
+    width:37%;
+    @include media-breakpoint-down(sm) { 
+      width:100%;
+     }
+    .searchRoute-setting-text{
+      border-left: 3px solid $primary; 
+      h1{
+        font-size: 24px;
+        color: $primary;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    .form-check{
+      margin-top: 46px;
+    }
+  }
+
+  .searchRoute-search{
+    width:41.2%;
+    @include media-breakpoint-down(sm) { 
+      width:100%;
+     }
+    .searchRoute-keyword{
+      margin-bottom: 46px;
+      label{
+        margin-right: 64px;
+        &:hover{
+          font-weight: bold;
+          color: $primary;
+        }
+      } 
+      input{
+        border:1px solid #DADADA;
+        border-radius: 25px;
+        padding:12px;
+        @include media-breakpoint-down(sm) { 
+          width:100%;
+          border-radius: 10px;
+         }
+      }
+    }
+    .searchRoute-address{
+      label{
+        margin-right: 48px;
+        &:hover{
+          font-weight: bold;
+          color: $primary;
+        }
+      }
+      input{
+        border:1px solid #DADADA;
+        border-radius: 25px;
+        padding:12px;
+        @include media-breakpoint-down(sm) { 
+          width:100%;
+          border-radius: 10px;
+         }
+      }
+    }
+  }
+
+  .searchRoute-btn{
+    width:21.8%;
+    button{
+      margin-top:  50px;
+    }
+    @include media-breakpoint-down(sm) { 
+      width:100%;
+      margin-top: 32px;
+     }
+    
+  }
+
+  .searchResult{
+   
+    border: 1px solid #E0E0E0;
+    border-radius:25px;
+    padding: 24px 48px 33px 32px;
+    margin-bottom:147px;
+    @include media-breakpoint-down(sm) { 
+      padding: 32px 24px; 
+      margin-bottom: 32px;
+     }
+     .searchResult-text{
+      border-left: 3px solid $primary; 
+      h2{
+        font-size: 24px;
+        color: $primary;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+
+
   }
