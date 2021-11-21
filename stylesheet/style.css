@@ -11050,4 +11050,12 @@ nav .nav-item a:hover {
     padding-top: 23px;
   }
 }
+
+.exploreHeader {
+  height: 299px;
+  width: 100%;
+  background-image: url(../image/bike-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=style.css.map */
