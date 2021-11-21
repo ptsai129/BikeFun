@@ -10560,7 +10560,7 @@ ul {
 header {
   height: 715px;
   width: 100%;
-  background-image: url(../image/header-background.jfif);
+  background-image: url(../image/header-background.jpg);
   background-size: cover;
 }
 
@@ -10628,6 +10628,10 @@ nav .nav-firstItem a {
   font-weight: 300;
 }
 
+nav .nav-firstItem a:hover {
+  color: #E1AB43;
+}
+
 nav .nav-firstItem a img {
   height: 49px;
   width: 133px;
@@ -10646,6 +10650,12 @@ nav .nav-item a {
   color: #7e7e7e;
   font-weight: 400;
   text-align: center;
+}
+
+nav .nav-item a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #E1AB43;
 }
 
 .intro {
@@ -10690,16 +10700,24 @@ nav .nav-item a {
   }
 }
 
-.latestNews-link {
+.latestNews-title {
   width: 17.5%;
 }
 
-.latestNews-link h2, .latestNews-link .h2 {
+.latestNews-title:hover {
+  background-color: #E1AB43;
+}
+
+.latestNews-title:hover h2, .latestNews-title:hover .h2 {
+  color: white;
+}
+
+.latestNews-title h2, .latestNews-title .h2 {
   color: #E1AB43;
 }
 
 @media (max-width: 575.98px) {
-  .latestNews-link h2, .latestNews-link .h2 {
+  .latestNews-title h2, .latestNews-title .h2 {
     padding-top: 22px;
     padding-bottom: 22px;
     margin-bottom: 0px;
@@ -10707,7 +10725,7 @@ nav .nav-item a {
 }
 
 @media (max-width: 575.98px) {
-  .latestNews-link {
+  .latestNews-title {
     width: 100%;
   }
 }
@@ -10731,12 +10749,19 @@ nav .nav-item a {
 }
 
 .bikeRoute {
-  background-image: url(/image/index_news01.jpg);
+  background-image: url(../image/index_news01.jpg);
   height: 472px;
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.bikeRoute:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 767.98px) {
@@ -10753,12 +10778,19 @@ nav .nav-item a {
 }
 
 .newParkExibOpen {
-  background-image: url(/image/index_news02.jpg);
+  background-image: url(../image/index_news02.jpg);
   height: 472px;
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.newParkExibOpen:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 767.98px) {
@@ -10795,37 +10827,50 @@ nav .nav-item a {
   }
 }
 
-.exploreRoute {
-  height: 472px;
+.epxloreRoute {
+  height: 492px;
+  border-bottom: 1px solid #b6b6b6;
 }
 
-@media (max-width: 575.98px) {
-  .exploreRoute {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media (max-width: 767.98px) {
+  .epxloreRoute {
+    height: 408px;
   }
 }
 
-.exploreRoute-link {
+@media (max-width: 575.98px) {
+  .epxloreRoute {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: none;
+  }
+}
+
+.exploreRoute-title {
   width: 17.5%;
-  border-right: 1px solid #b6b6b6;
+  border-right: 1px solid #B6B6B6;
+}
+
+.exploreRoute-title:hover {
+  background-color: #E1AB43;
+}
+
+.exploreRoute-title:hover h2, .exploreRoute-title:hover .h2 {
+  color: white;
 }
 
 @media (max-width: 575.98px) {
-  .exploreRoute-link {
+  .exploreRoute-title {
     width: 100%;
   }
 }
 
-.exploreRoute-link h2, .exploreRoute-link .h2 {
+.exploreRoute-title h2, .exploreRoute-title .h2 {
   color: #E1AB43;
 }
 
 @media (max-width: 575.98px) {
-  .exploreRoute-link h2, .exploreRoute-link .h2 {
+  .exploreRoute-title h2, .exploreRoute-title .h2 {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -10844,40 +10889,165 @@ nav .nav-item a {
 }
 
 .epxloreRoute-search p {
-  padding-top: 182px;
-  font-size: 20px;
-}
-
-@media (max-width: 575.98px) {
-  .epxloreRoute-search p {
-    padding-top: 32px;
-  }
+  padding-top: 37%;
 }
 
 .epxloreRoute-search button {
   margin-top: 32px;
-  margin-bottom: 186px;
-}
-
-@media (max-width: 575.98px) {
-  .epxloreRoute-search button {
-    margin-top: 52px;
-    margin-bottom: 32px;
-  }
 }
 
 .exploreRoute-img {
   width: 27.5%;
-  background-image: url(/image/index_route.jpg);
-  background-size: cover;
+  height: 492px;
+  background-image: url(../image/index_route.jpg);
   background-position: left;
-  padding-left: 0px;
-  padding-right: 0px;
+  background-size: cover;
+}
+
+.exploreRoute-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 575.98px) {
   .exploreRoute-img {
     width: 100%;
+  }
+}
+
+.searchStop {
+  height: 492px;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+@media (max-width: 767.98px) {
+  .searchStop {
+    height: 408px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .searchStop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: none;
+  }
+}
+
+.searchStop-title {
+  width: 17.5%;
+  border-right: 1px solid #B6B6B6;
+}
+
+.searchStop-title:hover {
+  background-color: #E1AB43;
+}
+
+.searchStop-title:hover h2, .searchStop-title:hover .h2 {
+  color: white;
+}
+
+@media (max-width: 575.98px) {
+  .searchStop-title {
+    width: 100%;
+  }
+}
+
+.searchStop-title h2, .searchStop-title .h2 {
+  color: #E1AB43;
+}
+
+@media (max-width: 575.98px) {
+  .searchStop-title h2, .searchStop-title .h2 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.searchStop-img {
+  width: 55%;
+  background-image: url(../image/index_busStation.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.searchStop-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 575.98px) {
+  .searchStop-img {
+    width: 100%;
+  }
+}
+
+.searchStop-links {
+  width: 27.5%;
+  height: 492px;
+}
+
+@media (max-width: 767.98px) {
+  .searchStop-links {
+    height: 408px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .searchStop-links {
+    width: 100%;
+  }
+}
+
+.searchStop-links .map-link, .searchStop-links .info-link {
+  height: 50%;
+  padding-top: 40px;
+  padding-left: 25px;
+  border-bottom: 1px solid #B6B6B6;
+}
+
+.searchStop-links .map-link button, .searchStop-links .info-link button {
+  margin-top: 73px;
+}
+
+.faq {
+  height: 443px;
+}
+
+.faq h2, .faq .h2 {
+  color: #E1AB43;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  font-size: 24px;
+}
+
+.faq p {
+  font-size: 20px;
+}
+
+.faq button {
+  margin-top: 40px;
+}
+
+.footer {
+  height: 80px;
+  background-color: #E1AB43;
+}
+
+.footer p {
+  font-size: 20px;
+  color: white;
+  padding-top: 28px;
+}
+
+@media (max-width: 767.98px) {
+  .footer p {
+    font-size: 12px;
+    padding-top: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,14 +14,14 @@
     </header>
     <nav class="container-fluid">
         <ul class="d-flex">
-            <li class="nav-firstItem "><a href="#" class=" d-none d-sm-block"><img src="./image/nav-logo.png" alt="nav-logo"><br>Bike Fun！自行車旅遊網</a></li>
-            <li class="nav-item  "><a href="#" class=" d-none d-sm-block">最新消息</a></li>
-            <li class="nav-item  "><a href="#" class=" d-none d-sm-block">探索路線</a></li>
-            <li class="nav-item  "><a href="#" class=" d-none d-sm-block">尋找站點</a></li>
-            <li class="nav-item  "><a href="#" class=" d-none d-sm-block">常見問題</a></li>
+            <li class="nav-firstItem"><a href="#" class=" d-none d-sm-block"><img src="./image/nav-logo.png" alt="nav-logo"><br>Bike Fun！自行車旅遊網</a></li>
+            <li class="nav-item"><a href="#" class=" d-none d-sm-block">最新消息</a></li>
+            <li class="nav-item"><a href="../exploreRoute.html" class=" d-none d-sm-block">探索路線</a></li>
+            <li class="nav-item"><a href="#" class=" d-none d-sm-block">尋找站點</a></li>
+            <li class="nav-item"><a href="#" class=" d-none d-sm-block">常見問題</a></li>
         </ul>
     </nav>
-    <div class="intro d-flex flex-column justify-content-center">
+    <div class="intro container d-flex flex-column justify-content-center">
         <img class="intro-img" src="./image/boyWithRoute.png" alt="bikeRouteimg">
         <p>帶著大家去旅行，沿著台灣本島的海岸走一圈，呈現當下台灣，是導演努力的功課。
             幾乎每個喜愛騎車的人都喜歡騎循環路線，在台灣最長的循環路線就是沿海環島。
@@ -30,8 +30,8 @@
             像是時間的倒轉，回憶的圓圈，一如始終如一的人生，本來無一物。文章取自電影練習曲介紹
             </p>
     </div>
-    <div class="latestNews d-flex"> 
-        <div class="latestNews-link d-flex justify-content-center  align-items-center">
+    <div class="latestNews container-fluid d-flex"> 
+        <div class="latestNews-title d-flex justify-content-center  align-items-center">
          <h2>最新消息</h2>
         </div>
         <div class="latestNews-card">
@@ -49,12 +49,12 @@
            </div>
         </div>
         <div class="latestNews-more  d-flex flex-column justify-content-center align-items-center">
-            <button type="button" class="btn btn-outline-secondary rounded-pill">更多最新消息</button>
+            <button type="button" class="btn btn-outline-secondary rounded-pill">更多最新消息
+            </button>
         </div>
     </div>
-
-    <div class="epxloreRoute container-fluid  d-flex flex-sm-wrap">
-        <div class="exploreRoute-link order-1 order-sm-1 d-flex justify-content-center align-items-center">
+    <div class="epxloreRoute container-fluid d-flex">
+        <div class="exploreRoute-title order-1 order-sm-1 d-flex justify-content-center align-items-center">
             <h2>探索路線</h2>
         </div>
         <div class="epxloreRoute-search order-3 order-sm-2">
@@ -64,9 +64,32 @@
         <div class="exploreRoute-img  order-2 order-sm-3">
         </div>
     </div>
-   
-    <div class="searchStop">
-
-    </div> 
+    <div class="searchStop container-fluid d-flex">
+        <div class="searchStop-title d-flex justify-content-center align-items-center">
+            <h2>尋找站點</h2>
+        </div>
+        <div class="searchStop-img">
+        </div>
+      <div class="searchStop-links d-flex flex-column">
+        <div class="map-link">
+            <p>即時站點地圖</p>
+            <button type="button" class="btn btn-outline-secondary rounded-pill">立即搜尋</button>
+        </div>
+        <div class="info-link">
+            <p>服務中心資訊</p>
+            <button type="button" class="btn btn-outline-secondary rounded-pill">立即搜尋</button>
+        </div>
+    </div>
+ </div>
+ <div class="faq container-fluid text-md-center text-left">
+    <h2 class="text-center">常見問題</h2>
+    <p>若您在常見問題中無法找到解答，請填寫意見表回饋給我們。</p>
+    <p>別忘了提供您的e-mail信箱才可以收到我們的回覆。</p>
+    <p>您將會在上班日的24小時內收到我們的回覆。</p>
+    <button type="button" class="btn btn-outline-secondary rounded-pill">更多常見問題</button>
+ </div>
+<div class="footer text-center">
+    <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
+</div>
 </body>
 </html>

@@ -58,7 +58,7 @@ ul {
 header {
   height: 715px;
   width: 100%;
-  background-image: url(../image/header-background.jfif);
+  background-image: url(../image/header-background.jpg);
   background-size: cover;
   img {
     height: 23%;
@@ -98,6 +98,7 @@ nav {
   }
   li {
     list-style-type: none;
+    
   }
   .nav-firstItem {
     width: 26.6%;
@@ -108,6 +109,9 @@ nav {
       font-size: 10px;
       color: #7e7e7e;
       font-weight: 300;
+      &:hover { 
+        color: $primary; 
+       }
       img {
         height: 49px;
         width: 133px;
@@ -125,6 +129,10 @@ nav {
       color: #7e7e7e;
       font-weight: 400;
       text-align: center;
+      &:hover { 
+        transform: scale(1.5);
+        color: $primary; 
+       }
     }
   }
 }
@@ -142,6 +150,8 @@ nav {
   }
 }
 
+
+
 .latestNews {
   border-bottom: 1px solid #b6b6b6;
   border-top: 1px solid #b6b6b6;
@@ -158,10 +168,17 @@ nav {
   }
 }
 
-.latestNews-link {
+.latestNews-title {
   width: 17.5%;
+  &:hover{
+    background-color: $primary;
+    h2{
+      color:white;
+    }
+    }
   h2 {
     color: $primary;
+
     @include media-breakpoint-down(sm) {
       padding-top: 22px;
       padding-bottom: 22px;
@@ -187,11 +204,15 @@ nav {
   }
 }
 .bikeRoute {
-  background-image: url(/image/index_news01.jpg);
+  background-image: url(../image/index_news01.jpg);
   height: 472px;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+  &:hover { 
+    transform: scale(1.1); 
+    transition: all 0.3s;
+  }
   @include media-breakpoint-down(md) {
     height: 408px;
   }
@@ -201,11 +222,15 @@ nav {
   }
 }
 .newParkExibOpen {
-  background-image: url(/image/index_news02.jpg);
+  background-image: url(../image/index_news02.jpg);
   height: 472px;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+  &:hover { 
+    transform: scale(1.1); 
+    transition: all 0.3s;
+  }
   @include media-breakpoint-down(md) {
     height: 408px;
   }
@@ -233,64 +258,178 @@ nav {
   }
 }
 
-.exploreRoute {
-  height: 472px;
-  @include media-breakpoint-down(sm) { 
+
+
+
+.epxloreRoute{
+  height:492px;
+  border-bottom: 1px solid #b6b6b6;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
     flex-wrap: wrap;
-    justify-content: center;
+    border-bottom: none;
   }
-}
 
-.exploreRoute-link {
+} 
+
+.exploreRoute-title{
   width: 17.5%;
-  border-right: 1px solid #b6b6b6;
-  @include media-breakpoint-down(sm) {
-    width: 100%;
-  }
-  h2 {
-    color: $primary;
-    @include media-breakpoint-down(sm) {
-      padding-top: 22px;
-      padding-bottom: 22px;
+  border-right: 1px solid #B6B6B6;
+  &:hover{
+    background-color: $primary;
+    h2{
+      color:white;
     }
-  }
-}
-
-.epxloreRoute-search {
-  width: 55%;
-  padding-left: 53px;
+    }
   @include media-breakpoint-down(sm) {
-    width: 100%;
-    padding-left: 0px;
+    width:100%;
   }
-  p {
-    padding-top: 182px;
-    font-size: 20px;
+  h2{    
+    color: $primary;
+    
     @include media-breakpoint-down(sm) {
-        padding-top: 32px;
-      }
-  }
-  button {
-    margin-top: 32px;
-    margin-bottom: 186px;
-    @include media-breakpoint-down(sm) {
-        margin-top: 52px;
-        margin-bottom: 32px;
-      }
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
-  
+  }
 }
 
+.epxloreRoute-search{
+  width:55%;
+  padding-left:53px;
+  @include media-breakpoint-down(sm) {
+    width:100%;
+    padding-left:0px;
+  }
+  p{
+    padding-top: 37%;
+  }
+  button{
+    margin-top:32px;
+  }
+
+}
 .exploreRoute-img {
   width: 27.5%;
-  background-image: url(/image/index_route.jpg);
-  background-size: cover;
-  background-position: left;
-  padding-left:0px;
-  padding-right:0px;
-
+  height:492px;
+  &:hover { 
+    transform: scale(1.1); 
+    transition: all 0.3s;
+  }
   @include media-breakpoint-down(sm) {
-    width: 100%;
+    width:100%;
+  }
+  background-image: url(../image/index_route.jpg);
+  background-position: left;
+  background-size: cover;
+ 
+}
+
+
+.searchStop{
+  height:492px;
+  border-bottom: 1px solid #b6b6b6;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+
+} 
+
+.searchStop-title{
+  width: 17.5%;
+  border-right: 1px solid #B6B6B6;
+  &:hover{
+  background-color: $primary;
+  h2{
+    color:white;
+  }
+  }
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+  h2{    
+    color: $primary;
+    
+    @include media-breakpoint-down(sm) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  }
+
+
+}
+
+
+
+.searchStop-img{
+  width:55%;
+  &:hover { 
+    transform: scale(1.1); 
+    transition: all 0.3s;
+  }
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+  background-image: url(../image/index_busStation.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.searchStop-links{
+  width: 27.5%;
+  height:492px;
+  @include media-breakpoint-down(md) {
+    height: 408px;
+  }
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+  .map-link , .info-link{
+    height:50%;
+    padding-top: 40px;
+    padding-left:25px;
+    border-bottom: 1px solid #B6B6B6;
+    button{
+      margin-top: 73px;
+    }
+  }
+
+}
+
+.faq{
+  height:443px;
+  h2{
+     color:$primary;
+     padding-top:56px;
+     padding-bottom:56px;
+     font-size: 24px;
+  }
+  p{
+    font-size: 20px;
+  }
+  button{
+    margin-top: 40px;
+  }
+}
+
+.footer{
+  height:80px;
+  background-color: $primary;
+  p{
+    font-size: 20px;
+    color:white;
+    padding-top: 28px;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+      padding-top: 23px;
+    }
   }
 }
