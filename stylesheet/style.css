@@ -12027,11 +12027,6 @@ nav .nav-item a:hover {
 
 @media (max-width: 575.98px) {
   .latestNews {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-left: 25px;
     padding-right: 25px;
     border-bottom: none;
@@ -12077,7 +12072,7 @@ nav .nav-item a:hover {
 .latestNews-card a {
   color: #fff;
   text-decoration: underline;
-  padding-top: 12.3%;
+  padding-top: 46px;
 }
 
 @media (max-width: 575.98px) {
@@ -12178,8 +12173,6 @@ nav .nav-item a:hover {
 
 @media (max-width: 575.98px) {
   .epxloreRoute {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     border-bottom: none;
   }
 }
@@ -12268,8 +12261,6 @@ nav .nav-item a:hover {
 
 @media (max-width: 575.98px) {
   .searchStop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     border-bottom: none;
   }
 }

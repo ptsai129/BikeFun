@@ -165,8 +165,6 @@ nav {
     height: 408px;
   }
   @include media-breakpoint-down(sm) {
-    flex-wrap: wrap;
-    justify-content: center;
     padding-left: 25px;
     padding-right: 25px;
     border-bottom: none;
@@ -202,7 +200,7 @@ nav {
   a {
     color: $light;
     text-decoration: underline;
-    padding-top: 12.3%;
+    padding-top: 46px;
   }
   @include media-breakpoint-down(sm) {
     width: 100%;
@@ -273,7 +271,6 @@ nav {
     height: 408px;
   }
   @include media-breakpoint-down(sm) {
-    flex-wrap: wrap;
     border-bottom: none;
   }
 
@@ -289,23 +286,25 @@ nav {
     }
     }
   @include media-breakpoint-down(sm) {
-    width:100%;
+   width:100%;
   }
   h2{    
     color: $primary;
     
     @include media-breakpoint-down(sm) {
-    padding-top: 22px;
-    padding-bottom: 22px;
+      padding-top: 22px;
+      padding-bottom: 22px;
   }
 
   }
 }
 
 .epxloreRoute-search{
-  width:55%;
+    width:55%;
   padding-left:53px;
   @include media-breakpoint-down(sm) {
+
+      
     width:100%;
     padding-left:0px;
   }
@@ -318,14 +317,14 @@ nav {
 
 }
 .exploreRoute-img {
-  width: 27.5%;
+   width: 27.5%;
   height:492px;
   &:hover { 
     transform: scale(1.1); 
     transition: all 0.3s;
   }
   @include media-breakpoint-down(sm) {
-    width:100%;
+   width:100%;
   }
   background-image: url(../image/index_route.jpg);
   background-position: left;
@@ -341,7 +340,6 @@ nav {
     height: 408px;
   }
   @include media-breakpoint-down(sm) {
-    flex-wrap: wrap;
     border-bottom: none;
   }
 
