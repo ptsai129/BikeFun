@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>探索路線</title>
-    <link rel="stylesheet" href="./stylesheet/style.css">
-</head>
-<body>
-    <div class=" exploreHeader container-fluid position-relative">
-    </div>
-        <nav class="container-fluid ">
-            <ul class="d-flex">
-                <li class="nav-firstItem"><a href="#" class=" d-none d-sm-block"><img src="./image/nav-logo.png" alt="nav-logo"><br>Bike Fun！自行車旅遊網</a></li>
-                <li class="nav-item"><a href="#" class=" d-none d-sm-block">最新消息</a></li>
-                <li class="nav-item"><a href="#" class=" d-none d-sm-block">探索路線</a></li>
-                <li class="nav-item"><a href="#" class=" d-none d-sm-block">尋找站點</a></li>
-                <li class="nav-item"><a href="#" class=" d-none d-sm-block">常見問題</a></li>
-            </ul>
-        </nav>
-        <nav class="container border-bottom-0" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-            <ol class="breadcrumb pt-3 ">
-              <li class="breadcrumb-item text-dark"><a href="index.html">首頁</a></li>
-              <li class="breadcrumb-item active text-secondary" aria-current="page">探索路線</li>
-            </ol>
-          </nav>
-        <div class="searchRoute container d-flex flex-wrap mt-3">
-            <div class="searchRoute-setting">
-                <div class="searchRoute-setting-text ps-3">
-                <h1>探索路線</h1>
-                <p>找到離您最近的自行車車道</p>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">開啟自動定位</label>
-                  </div>
-            </div>
-            <div class="searchRoute-search">
-                <div class="searchRoute-keyword">
-                <label for="routeKeyword">路線關鍵字</label>
-                <input type="text" name="" id="routeKeyword" placeholder="請輸入關鍵字">
-                </div>
-                <div class="searchRoute-address">
-                <label for="keyinAddress">手動輸入地址</label>
-                <input type="text" name="" id="keyinAddress" placeholder="請輸入地址">
-                </div>
-            </div>
-            <div class="searchRoute-btn ">
-            <button type="button" class="btn btn-secondary text-light">Go !</button>
-            </div>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+  <body>
+    <div class="exploreHeader container-fluid position-relative"></div>
+    <nav class="container-fluid">
+      <ul class="d-flex">
+        <li class="nav-firstItem">
+          <a href="#" class="d-none d-sm-block"
+            ><img src="./image/nav-logo.png" alt="nav-logo" /><br />Bike
+            Fun！自行車旅遊網</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">最新消息</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">探索路線</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">尋找站點</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">常見問題</a>
+        </li>
+      </ul>
+    </nav>
+    <nav
+      class="container border-bottom-0"
+      style="
+        --bs-breadcrumb-divider: url(
+          &#34;data:image/svg + xml,
+          %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;
+        );
+      "
+      aria-label="breadcrumb"
+    >
+      <ol class="breadcrumb pt-3">
+        <li class="breadcrumb-item text-dark"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item active text-secondary" aria-current="page">
+          探索路線
+        </li>
+      </ol>
+    </nav>
+    <div class="searchRoute container d-flex flex-column flex-wrap mt-3">
+     <div class="searchRoute-setting">
+        <div class="searchRoute-setting-text ps-3">
+          <h1>探索路線</h1>
+          <p>找到離您最近的自行車車道</p>
         </div>
-        <div class="searchResult  container">
-            <div class="searchResult-text ps-3">
-                <h2>搜尋結果</h2>
-                <p>找到離您最近的自行車車道</p>
-            </div>
-            <p>很抱歉，沒有找到相關的路線。</p>
         </div>
 
-        
-    <div class="footer text-center">
-        <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
+       <div class="d-flex flex-wrap  justify-content-md-around ">
+        <select class="form-select w-auto" aria-label="Default select example">
+            <option selected>台北市</option>
+            <option value="Taipei">台北市</option>
+            <option value="Taichung">台中市</option>
+            <option value="Taoyuan">桃園市</option>
+          </select>   
+          <label for="routeKeyword">路線關鍵字</label>
+          <input
+            type="text"
+            name=""
+            id="routeKeyword"
+            placeholder="請輸入關鍵字"
+          />
+          <label for="keyinAddress">手動輸入地址</label>
+          <input
+            type="text"
+            name=""
+            id="keyinAddress"
+            placeholder="請輸入地址"
+          />
+        <button type="button" class="btn btn-secondary text-light">Go !</button>
     </div>
-</body>
+    <div class="form-check form-switch order-sm-1">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >開啟自動定位</label
+        >
+      </div>
+    </div>
+
+    <div class="searchResult container">
+      <div class="searchResult-text ps-3">
+        <h2>搜尋結果</h2>
+        <p>找到離您最近的自行車車道</p>
+      </div>
+      <ul class="searchList">
+          <li>很抱歉，沒有找到相關的路線。</li>
+      </ul>
+      <!-- <p>很抱歉，沒有找到相關的路線。</p> -->
+    </div>
+
+    <div class="footer text-center">
+      <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+    <script src="all.js"></script>
+  </body>
 </html>

@@ -12098,13 +12098,6 @@ nav .nav-item a:hover {
      object-fit: cover;
 }
 
-.bikeRoute:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
 @media (max-width: 767.98px) {
   .bikeRoute {
     height: 408px;
@@ -12125,13 +12118,6 @@ nav .nav-item a:hover {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.newParkExibOpen:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 @media (max-width: 767.98px) {
@@ -12259,13 +12245,6 @@ nav .nav-item a:hover {
   background-size: cover;
 }
 
-.exploreRoute-img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
 @media (max-width: 575.98px) {
   .exploreRoute-img {
     width: 100%;
@@ -12326,13 +12305,6 @@ nav .nav-item a:hover {
   background-image: url(../image/index_busStation.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.searchStop-img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 @media (max-width: 575.98px) {
@@ -12454,16 +12426,6 @@ nav .nav-item a:hover {
   }
 }
 
-.searchRoute-setting {
-  width: 37%;
-}
-
-@media (max-width: 575.98px) {
-  .searchRoute-setting {
-    width: 100%;
-  }
-}
-
 .searchRoute-setting .searchRoute-setting-text {
   border-left: 3px solid #E1AB43;
 }
@@ -12479,16 +12441,6 @@ nav .nav-item a:hover {
 
 .searchRoute-setting .form-check {
   margin-top: 46px;
-}
-
-.searchRoute-search {
-  width: 41.2%;
-}
-
-@media (max-width: 575.98px) {
-  .searchRoute-search {
-    width: 100%;
-  }
 }
 
 .searchRoute-search .searchRoute-keyword {
@@ -12537,10 +12489,6 @@ nav .nav-item a:hover {
     width: 100%;
     border-radius: 10px;
   }
-}
-
-.searchRoute-btn {
-  width: 21.8%;
 }
 
 .searchRoute-btn button {

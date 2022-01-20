@@ -215,10 +215,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-  &:hover { 
-    transform: scale(1.1); 
-    transition: all 0.3s;
-  }
+
   @include media-breakpoint-down(md) {
     height: 408px;
   }
@@ -233,10 +230,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-  &:hover { 
-    transform: scale(1.1); 
-    transition: all 0.3s;
-  }
+
   @include media-breakpoint-down(md) {
     height: 408px;
   }
@@ -330,11 +324,8 @@ nav {
 }
 .exploreRoute-img {
    width: 27.5%;
-  height:492px;
-  &:hover { 
-    transform: scale(1.1); 
-    transition: all 0.3s;
-  }
+   height:492px;
+
   @include media-breakpoint-down(sm) {
    width:100%;
    height:379px;
@@ -388,10 +379,7 @@ nav {
 
 .searchStop-img{
   width:55%;
-  &:hover { 
-    transform: scale(1.1); 
-    transition: all 0.3s;
-  }
+ 
   @include media-breakpoint-down(sm) {
     width:100%;
     height:379px;
@@ -491,10 +479,7 @@ nav {
 
   .searchRoute-setting{
 
-    width:37%;
-    @include media-breakpoint-down(sm) { 
-      width:100%;
-     }
+   
     .searchRoute-setting-text{
       border-left: 3px solid $primary; 
       h1{
@@ -511,10 +496,7 @@ nav {
   }
 
   .searchRoute-search{
-    width:41.2%;
-    @include media-breakpoint-down(sm) { 
-      width:100%;
-     }
+ 
     .searchRoute-keyword{
       margin-bottom: 46px;
       label{
@@ -555,7 +537,7 @@ nav {
   }
 
   .searchRoute-btn{
-    width:21.8%;
+  
     button{
       margin-top:  50px;
     }
