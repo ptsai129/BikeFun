@@ -137,7 +137,7 @@ nav {
       font-weight: 400;
       text-align: center;
       &:hover { 
-        transform: scale(1.5);
+        transform: scale(1.3);
         color: $primary; 
        }
     }
@@ -472,14 +472,11 @@ nav {
     margin-bottom: 40px;
     @include media-breakpoint-down(sm) { 
       padding: 32px 24px; 
-      margin-bottom: 32px;
+    
      }
   }
 
 
-  .searchRoute-setting{
-
-   
     .searchRoute-setting-text{
       border-left: 3px solid $primary; 
       h1{
@@ -493,14 +490,15 @@ nav {
     .form-check{
       margin-top: 46px;
     }
-  }
+  
 
-  .searchRoute-search{
- 
-    .searchRoute-keyword{
-      margin-bottom: 46px;
+
+    .searchRoute-form{
+      select{
+        padding-right: 95px;
+      }
+    
       label{
-        margin-right: 64px;
         &:hover{
           font-weight: bold;
           color: $primary;
@@ -508,45 +506,20 @@ nav {
       } 
       input{
         border:1px solid #DADADA;
-        border-radius: 25px;
+        border-radius: 10px;
         padding:12px;
-        @include media-breakpoint-down(sm) { 
-          width:100%;
-          border-radius: 10px;
-         }
+        width:300px;
+       
       }
-    }
-    .searchRoute-address{
-      label{
-        margin-right: 48px;
-        &:hover{
-          font-weight: bold;
-          color: $primary;
-        }
-      }
-      input{
-        border:1px solid #DADADA;
-        border-radius: 25px;
-        padding:12px;
-        @include media-breakpoint-down(sm) { 
-          width:100%;
-          border-radius: 10px;
-         }
-      }
-    }
-  }
+      button{
+        padding: 9px 40px;
 
-  .searchRoute-btn{
-  
-    button{
-      margin-top:  50px;
+      }
     }
-    @include media-breakpoint-down(sm) { 
-      width:100%;
-      margin-top: 32px;
-     }
     
-  }
+
+
+ 
 
   .searchResult{
    

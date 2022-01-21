@@ -31,53 +31,50 @@
         </li>
       </ul>
     </nav>
-    <nav
-      class="container border-bottom-0"
-      style="
-        --bs-breadcrumb-divider: url(
-          &#34;data:image/svg + xml,
-          %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;
-        );
-      "
-      aria-label="breadcrumb"
-    >
-      <ol class="breadcrumb pt-3">
+
+
+    <div class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item text-dark"><a href="index.html">首頁</a></li>
-        <li class="breadcrumb-item active text-secondary" aria-current="page">
-          探索路線
-        </li>
+        <li class="breadcrumb-item active  text-secondary" aria-current="page">探索路線</li>
       </ol>
-    </nav>
-    <div class="searchRoute container d-flex flex-column flex-wrap mt-3">
-     <div class="searchRoute-setting">
+    </div>
+    <div class="container">
+    <div class="searchRoute d-flex flex-column flex-wrap mt-3 mb-3">
         <div class="searchRoute-setting-text ps-3">
           <h1>探索路線</h1>
           <p>找到離您最近的自行車車道</p>
         </div>
-        </div>
-
-       <div class="d-flex flex-wrap  justify-content-md-around ">
-        <select class="form-select w-auto" aria-label="Default select example">
+       <div class="searchRoute-form d-flex flex-wrap mt-7 align-items-center ">
+        <div class="d-flex flex-column">
+        <label class="mb-2">縣市</label>
+        <select class="form-select py-3" aria-label="Default select example">
             <option selected>台北市</option>
             <option value="Taipei">台北市</option>
             <option value="Taichung">台中市</option>
             <option value="Taoyuan">桃園市</option>
-          </select>   
-          <label for="routeKeyword">路線關鍵字</label>
-          <input
+          </select>
+          </div>
+          <div class="d-flex flex-column ms-md-4">
+          <label for="routeKeyword" class="mb-2">路線關鍵字</label>
+          <input class="searchRoute-keyword"
             type="text"
-            name=""
+            name="routeKeyword"
             id="routeKeyword"
             placeholder="請輸入關鍵字"
           />
-          <label for="keyinAddress">手動輸入地址</label>
-          <input
+         </div> 
+         <div class="d-flex flex-column ms-lg-9">
+          <label for="keyinAddress" class="mb-2">手動輸入地址</label>
+          <input 
+            class="searchRoute-address"
             type="text"
-            name=""
+            name="keyinAddress"
             id="keyinAddress"
             placeholder="請輸入地址"
           />
-        <button type="button" class="btn btn-secondary text-light">Go !</button>
+          </div>
+        <button type="button" class="btn btn-secondary text-light mt-7 ms-md-9 ">Go !</button>
     </div>
     <div class="form-check form-switch order-sm-1">
         <input
@@ -85,13 +82,14 @@
           type="checkbox"
           id="flexSwitchCheckDefault"
         />
-        <label class="form-check-label" for="flexSwitchCheckDefault"
+        <label class="form-check-label text-info" for="flexSwitchCheckDefault"
           >開啟自動定位</label
         >
       </div>
     </div>
-
-    <div class="searchResult container">
+  </div>
+    <div class="container">
+    <div class="searchResult">
       <div class="searchResult-text ps-3">
         <h2>搜尋結果</h2>
         <p>找到離您最近的自行車車道</p>
@@ -101,6 +99,7 @@
       </ul>
       <!-- <p>很抱歉，沒有找到相關的路線。</p> -->
     </div>
+  </div>
 
     <div class="footer text-center">
       <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
