@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>探索路線-地圖</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/> <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+  <body>
+    <div class="routeMap container-fluid position-relative"></div>
+    <nav class="container-fluid">
+      <ul class="d-flex">
+        <li class="nav-firstItem">
+          <a href="#" class="d-none d-sm-block"
+            ><img src="./image/nav-logo.png" alt="nav-logo" /><br />Bike
+            Fun！自行車旅遊網</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">最新消息</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">探索路線</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">尋找站點</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="d-none d-sm-block">常見問題</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="d-flex flex-wrap container-fluid">
+        <div class="routeInfo">
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item text-dark"><a href="index.html">首頁</a></li>
+                  <li class="breadcrumb-item text-dark">探索路線</li>
+                  <li class="breadcrumb-item active  text-secondary" aria-current="page">下坪自行車道</li>
+                </ol>
+              </div>
+              <h1>下坪自行車道</h1>
+              <p>557 南投縣竹山鎮投45鄉道7號</p>
+              <p>雙向 15.1公里</p>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label text-info" for="flexSwitchCheckDefault"
+                  >開啟附近推薦美食</label
+                >
+              </div>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label text-info" for="flexSwitchCheckDefault"
+                  >開啟附近推薦景點</label
+                >
+              </div>
+        </div>
+        <div id="map" class="mapStyle">
+
+        </div>
+    </div>
+
+    
+
+ 
+   
+<div class="footer text-center">
+    <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
+</div>
+<script src="map.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BikeFun</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 <body>
@@ -13,14 +14,25 @@
     <h1 class=" position-absolute">Bike Fun！自行車旅遊網</p>
     </header>
     <nav class="container-fluid">
-        <ul class="d-flex">
-            <li class="nav-firstItem"><a href="#" class=" d-none d-sm-block"><img src="./image/nav-logo.png" alt="nav-logo"><br>Bike Fun！自行車旅遊網</a></li>
+        <ul class="d-flex position-relative">
+            <li class="nav-firstItem"><a href="#" class="d-none d-sm-block"><img src="./image/nav-logo.png" alt="nav-logo"><br>Bike Fun！自行車旅遊網</a></li>
             <li class="nav-item"><a href="#" class=" d-none d-sm-block">最新消息</a></li>
             <li class="nav-item"><a href="https://ptsai129.github.io/BikeFun/exploreRoute.html" class=" d-none d-sm-block">探索路線</a></li>
             <li class="nav-item"><a href="#" class=" d-none d-sm-block">尋找站點</a></li>
             <li class="nav-item"><a href="#" class=" d-none d-sm-block">常見問題</a></li>
         </ul>
+        <ul>
+     
+        <div class="d-flex position-absolute mobile-nav">
+        <a class="d-block d-sm-none " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i></a> 
+        <a href="#" class="d-block d-sm-none mobile-nav-image"><img src="./image/nav-logo.png" alt="nav-logo"></a>
+        </div>
     </nav>
+
+    
+
+ 
     <div class="intro container">
         <div class="row  flex-column justify-content-center">
         <img class="intro-img" src="./image/boyWithRoute.png" alt="bikeRouteimg">
@@ -70,8 +82,6 @@
         </div>
     </div>
     </div>
-
-
     <div class="searchStop container-fluid gx-0">
         <div class="row gx-0">
         <div class="searchStop-title d-flex justify-content-center align-items-center">
@@ -101,5 +111,6 @@
 <div class="footer text-center">
     <p>BikeFun © 2021 Designer Vum. Engineer [ xxx ]. All rights reserved.</p>
 </div>
+
 </body>
 </html>

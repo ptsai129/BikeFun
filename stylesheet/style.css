@@ -13387,7 +13387,7 @@ nav {
 @media (max-width: 575.98px) {
   nav {
     top: -55px;
-    height: 55px;
+    height: 84px;
     border-bottom: none;
   }
 }
@@ -13454,6 +13454,21 @@ nav .nav-item a:hover {
     margin: 0 auto;
     padding-left: 0px;
   }
+}
+
+.mobile-nav {
+  top: 24px;
+  left: 30px;
+}
+
+.mobile-nav a i {
+  color: #dadada;
+}
+
+.mobile-nav-image {
+  height: 50px;
+  width: 135px;
+  margin-left: 160px;
 }
 
 .latestNews {
@@ -13818,7 +13833,7 @@ nav .nav-item a:hover {
 
 .footer {
   height: 80px;
-  background-color: #E1AB43;
+  background-color: #d5e0d1;
 }
 
 @media (max-width: 575.98px) {
@@ -13923,5 +13938,25 @@ nav .nav-item a:hover {
 
 .searchResult .searchResult-text p {
   font-size: 14px;
+}
+
+.routeMap {
+  height: 299px;
+  width: 100%;
+  background-image: url(../image/routeMap.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.routeInfo {
+  width: 36%;
+}
+
+.mapStyle {
+  width: 64%;
+}
+
+#map {
+  height: 480px;
 }
 /*# sourceMappingURL=style.css.map */

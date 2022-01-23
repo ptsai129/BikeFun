@@ -100,7 +100,7 @@ nav {
   border-bottom: 1px solid #dfdfdf;
   @include media-breakpoint-down(sm) {
     top: -55px;
-    height: 55px;
+    height: 84px;
     border-bottom: none;
   }
   li {
@@ -157,6 +157,26 @@ nav {
   }
 }
 
+.mobile-nav{
+  top:24px;
+  left:30px;
+  a{
+    
+    i{
+      color: rgba(218, 218, 218, 1);
+    
+  }
+  
+}
+  
+ 
+}
+
+.mobile-nav-image{
+  height:50px;
+  width:135px;
+  margin-left: 160px;
+}
 
 
 .latestNews {
@@ -438,7 +458,7 @@ nav {
 
 .footer{
   height:80px;
-  background-color: $primary;
+  background-color: rgba(213, 224, 209, 1);
   @include media-breakpoint-down(sm) {
     margin-top: 32px;
   }
@@ -544,4 +564,26 @@ nav {
     }
 
 
+  }
+
+
+  //地圖
+
+  .routeMap {
+    height: 299px;
+    width: 100%;
+    background-image: url(../image/routeMap.png);
+    background-size: cover;
+    background-position: center;
+    }
+
+  .routeInfo{
+    width:36%;
+  }
+
+  .mapStyle{
+    width:64%;
+  }
+  #map{
+    height:480px;
   }
