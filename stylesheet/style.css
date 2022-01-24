@@ -13949,11 +13949,27 @@ nav .nav-item a:hover {
 }
 
 .routeInfo {
+  padding-left: 100px;
   width: 36%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 575.98px) {
+  .routeInfo {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
 
 .mapStyle {
   width: 64%;
+}
+
+@media (max-width: 575.98px) {
+  .mapStyle {
+    width: 100%;
+  }
 }
 
 #map {

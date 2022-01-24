@@ -7,24 +7,38 @@ let filterData =[];
 
 //初始化
 function init(){
-    getStationData();
+    getCurrentLocation();
 }
-//init();
+init();
 
-//取得指定[縣市]的公共自行車租借站位資料
-function getStationData(){
-    axios.get("https://ptx.transportdata.tw/MOTC/v2/Bike/Station/Taichung?%24format=JSON" , 
+
+//取得目前位置
+function getCurrentLocation(){
+    //https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation_API
+    navigator.geolocation.getCurrentPosition(function(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        //將目前位置參數帶到取得站點函式內執行
+        getAllStationData(lat, lon);      
+      });
+}
+
+
+
+//取得指定[位置,範圍]的全台自行車租借站位資訊
+function getAllStationData(lat ,lon){
+    axios.get(`https://ptx.transportdata.tw/MOTC/v2/Bike/Station/NearBy?%24spatialFilter=nearby(${lat}%2C%20${lon}%2C%201000)&%24format=JSON` , 
     {
         headers: getAuthorizationHeader()
     }).then(function(response){
         stationData = response.data;
-        getAvailableData();
+        getAllAvailableData(lat,lon);
 })
 }
 
-//取得動態指定[縣市]的公共自行車即時車位資料
-function getAvailableData(){
-    axios.get("https://ptx.transportdata.tw/MOTC/v2/Bike/Availability/Taichung?%24format=JSON" ,{
+//取得指定[位置,範圍]的全台公共自行車即時車位資料
+function getAllAvailableData(lat,lon){
+    axios.get(`https://ptx.transportdata.tw/MOTC/v2/Bike/Availability/NearBy?%24spatialFilter=nearby(${lat}%2C%20${lon}%2C%201000)&%24format=JSON`,{
         headers: getAuthorizationHeader()
     }).then(function (response){
         const availableData = response.data;
@@ -41,6 +55,9 @@ function getAvailableData(){
                     obj.availableRentBikes = availableItem.AvailableRentBikes;
                     //可還單車數量
                     obj.availableReturnBikes = availableItem.AvailableReturnBikes;
+                    //站點位置
+                    obj.lon = stationItem.StationPosition.PositionLon;
+                    obj.lat = stationItem.StationPosition.PositionLat;
                     filterData.push(obj);
                     //渲染畫面
                     renderFilterData();
@@ -59,7 +76,8 @@ const searchList = document.querySelector(".searchList");
 function renderFilterData(){
     let str ="";
     filterData.forEach(function(item){
-        str+=`<li>${item.stationName}，可租:${item.availableRentBikes}，可還:${item.availableReturnBikes}</li>`
+        str+=`<li> <a href="https://www.google.com/maps/place/${item.lat},${item.lon}" target="_blank">路線導航</a>
+        ${item.stationName}，可租:${item.availableRentBikes}，可還:${item.availableReturnBikes}</li>`
     })
     searchList.innerHTML = str; 
 

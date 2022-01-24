@@ -578,12 +578,24 @@ nav {
     }
 
   .routeInfo{
+    padding-left: 100px;
     width:36%;
+    box-sizing: border-box;
+    @include media-breakpoint-down(sm) { 
+      width:100%;
+      padding-left: 0px;
+     }
   }
 
   .mapStyle{
     width:64%;
+    @include media-breakpoint-down(sm) { 
+      width:100%;
+     }
   }
   #map{
     height:480px;
   }
+
+  
+  
