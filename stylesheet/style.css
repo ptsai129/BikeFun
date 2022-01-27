@@ -13975,4 +13975,12 @@ nav .nav-item a:hover {
 #map {
   height: 480px;
 }
+
+.searchStopImg {
+  height: 299px;
+  width: 100%;
+  background-image: url(../image/searchStop.png);
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=style.css.map */

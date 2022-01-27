@@ -47,16 +47,32 @@
         </div>
        <div class="searchRoute-form d-flex flex-wrap mt-7 align-items-center">
         <div class="d-flex flex-column">
-        <label class="mb-2">縣市</label>
-        <select class="form-select py-3 " aria-label="Default select example">
-            <option selected>台北市</option>
-            <option value="Taipei">台北市</option>
-            <option value="Taichung">台中市</option>
-            <option value="Taoyuan">桃園市</option>
+        <label class="mb-2">欲查詢縣市</label>
+        <select class="form-select py-3 cityList " aria-label="Default select example">
+            <option value="Keelung">基隆</option>
+            <option value="Taipei">台北</option>
+            <option value="NewTaipei">新北</option>
+            <option value="Taoyuan">桃園</option>
+            <option value="HsinchuCounty">新竹</option>
+            <option value="MiaoliCounty">苗栗</option>
+            <option value="Taichung">台中</option>
+            <option value="ChanghuaCounty">彰化</option>
+            <option value="YunlinCounty">雲林</option>
+            <option value="ChiayiCounty">嘉義縣</option>
+            <option value="Chiayi">嘉義市</option>
+            <option value="NantouCounty">南投</option>
+            <option value="Tainan">台南</option>
+            <option value="Kaohsiung">高雄</option>
+            <option value="KinmenCounty">金門</option>
+            <option value="PenghuCounty">澎湖</option>
+            <option value="HualienCounty">花蓮</option>
+            <option value="YilanCounty">宜蘭</option>
+            <option value="TaitungCounty">台東</option>
+            <option value="PingtungCounty">屏東</option>          
           </select>
           </div>
           <div class="d-flex flex-column ms-md-4 ">
-          <label for="routeKeyword" class="mb-2">路線關鍵字</label>
+          <label for="routeKeyword" class="mb-2">路線名稱關鍵字</label>
           <input class="searchRoute-keyword"
             type="text"
             name="routeKeyword"
@@ -74,7 +90,7 @@
             placeholder="請輸入地址"
           />
           </div>
-        <button type="button" class="btn btn-secondary text-light mt-7 ms-md-9 ">Go !</button>
+        <button type="button" class="btn btn-secondary text-light mt-7 ms-md-9 searchRouteBtn">Go !</button>
     </div>
     <div class="form-check form-switch">
         <input
@@ -95,7 +111,8 @@
         <p>找到離您最近的自行車車道</p>
       </div>
       <ul class="searchList">
-          <li>很抱歉，沒有找到相關的路線。</li>
+
+          <!-- <li>很抱歉，沒有找到相關的路線。</li> -->
       </ul>
       
     </div>

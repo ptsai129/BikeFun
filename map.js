@@ -12,3 +12,5 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 L.marker([24.9430016, 121.2153856]).addTo(map)
     .bindPopup('桃園高鐵站')
     .openPopup();
+
+//https://github.com/pointhi/leaflet-color-markers
